@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ajay Payer - AI/ML Engineer & Full-Stack Developer. B.Tech Computer Engineering at VJTI Mumbai. State Rank 11 (99.30% in IT).">
+  <meta name="keywords"
+    content="Ajay Payer, AI Engineer, Machine Learning, VJTI Mumbai, Django, React, Python, RAG, Software Engineering Portfolio">
+  <meta name="author" content="Ajay Payer">
+
+  <title>Ajay Payer | Executive Dashboard | AI & ML Engineer | VJTI Mumbai</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=2.2">
+</head>
+
+<body>
+
+  <!-- Background Ambient Glow FX -->
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Ajay Payer Dashboard">
+        <div class="brand-avatar">
+          <img src="assets/images/ajay-payer.jpg" alt="Ajay Payer portrait" loading="eager">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Ajay Payer</span>
+          <span class="brand-status">
+            <span class="status-pulse" aria-hidden="true"></span>
+            Intro
+          </span>
+        </div>
+      </a>
+
+      <!-- Multi-Page Navigation Links -->
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Dashboard</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Interactive Controls -->
+      <div class="nav-controls">
+        <button id="cmd-palette-btn" class="icon-btn" aria-label="Quick Commands (Ctrl+K)"
+          data-tooltip="Quick Search (Ctrl+K)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme (T)" data-tooltip="Switch Theme (Press T)">
+          <span id="theme-icon"></span>
+        </button>
+
+        <button id="mobile-toggle-btn" class="icon-btn mobile-toggle" aria-label="Open mobile navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand">
+        <span class="brand-name">Ajay Payer</span>
+      </div>
+      <button id="mobile-drawer-close" class="icon-btn" aria-label="Close navigation menu">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">🏠 Executive Dashboard</a></li>
+      <li><a href="education.html" class="mobile-nav-link">🎓 Academic & Education</a></li>
+      <li><a href="experience.html" class="mobile-nav-link">💼 Industry Experience</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">🚀 AI & Software Projects</a></li>
+      <li><a href="skills.html" class="mobile-nav-link">⚡ Technical Skills</a></li>
+      <li><a href="achievements.html" class="mobile-nav-link">🏆 Achievements & Awards</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">📬 Contact with Me</a></li>
+    </ul>
+    <div style="margin-top:20px;">
+      <a href="assets/images/AJAY_RESUME_final.pdf" target="_blank" rel="noopener" class="btn btn-primary"
+        style="width:100%;justify-content:center;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <span>View Resume</span>
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO / EXECUTIVE PROFILE OVERVIEW -->
+    <section class="hero-section" aria-label="Executive Profile">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Hero Content -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Hi, I'm <span class="name-highlight">Ajay Payer</span>
+            </h1>
+
+            <p class="hero-bio">
+              I'm a Computer Engineering undergraduate at <strong>Veermata Jijabai Technological Institute
+                (VJTI)</strong>, Mumbai, passionate about building intelligent, data-driven, and user-focused software
+              solutions.
+            </p>
+
+            <p class="hero-bio">
+              My interests lie in Artificial Intelligence, Machine Learning, and full-stack development, where I enjoy
+              combining analytical thinking with practical engineering to solve real-world problems. I aspire to build
+              technology that is scalable, reliable, and impactful.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="hero-cta-group" style="margin-top:12px;">
+              <a href="projects.html" class="btn btn-primary btn-lg">
+                <span>Explore Projects</span>
+                <span style="font-size:1.1rem;margin-left:4px;">→</span>
+              </a>
+
+              <a href="assets/images/AJAY_RESUME_final.pdf" target="_blank" rel="noopener"
+                class="btn btn-secondary btn-lg" data-tooltip="Open PDF Resume">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>View Resume</span>
+              </a>
+
+              <a href="contact.html" class="btn btn-secondary btn-lg">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Hero Portrait -->
+          <div class="hero-visual-card">
+            <div class="floating-rank-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+
+            </div>
+
+            <div class="avatar-wrapper">
+              <img src="assets/images/ajay-payer.jpg" alt="Ajay Payer portrait" loading="eager">
+              <div class="avatar-glass-overlay"></div>
+
+              <div class="avatar-floating-tag">
+                <div>
+                  <div class="tag-title">Ajay Payer</div>
+                  <div class="tag-sub">B.Tech Computer Eng @ VJTI</div>
+                </div>
+                <span class="badge-highlight">📍 Mumbai, IN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME & PROFESSIONAL PROFILE BENTO GRID -->
+    <section class="section-wrapper" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <p class="section-desc">A snapshot of my background, engineering philosophy, and the drive to solve
+            high-impact real-world problems.</p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Left: Biography & Story -->
+          <div class="bento-card">
+            <h3 class="bento-card-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              My Journey & Background
+            </h3>
+            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:14px;">
+              Born and raised in Maharashtra, my passion for computing started with exploring foundational algorithms
+              and software architectures. During my Diploma in Information Technology at <strong>Dr. Babasaheb Ambedkar
+                Technological University (DBATU)</strong>, I maintained exceptional academic rigor, securing
+              <strong>99.30%</strong> and achieving <strong>State Rank 11</strong> in Maharashtra while being honored as
+              the <strong>Top Academic Performer of the Year</strong>.
+            </p>
+            <p style="color:var(--text-secondary);line-height:1.7;">
+              Currently pursuing my B.Tech in Computer Engineering at <strong>Veermata Jijabai Technological Institute
+                (VJTI) Mumbai</strong>, I specialize in combining rigorous machine learning algorithms (Random Forest,
+              XGBoost, SVR) with modern Generative AI (RAG, LLaMA-3, Gemini) to build platforms that solve societal
+              challenges — from environmental monitoring to state-level educational governance and agritech.
+            </p>
+
+            <ul class="bento-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Core Focus:</strong> Retrieval-Augmented Generation (RAG), Predictive Machine Learning,
+                  Full-Stack Architecture.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Government Adoption:</strong> Designed an AI Decision Platform adopted by the Government
+                  of Maharashtra for higher education data intelligence.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Scalable Engineering:</strong> Designing robust software architectures, high-performance
+                  APIs, and clean user-focused interfaces.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Key Facts & Contact Quick Card -->
+          <div class="bento-card" style="display:flex;flex-direction:column;justify-content:space-between;">
+            <div>
+              <h3 class="bento-card-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                Profile Quick Facts
+              </h3>
+
+              <div class="bento-facts-grid">
+                <div class="fact-item">
+                  <span class="fact-label">Location</span>
+                  <div class="fact-val">Mumbai, India</div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">University</span>
+                  <div class="fact-val">VJTI Mumbai</div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Degree</span>
+                  <div class="fact-val">B.Tech Comp Eng</div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">State Rank</span>
+                  <div class="fact-val" style="color:var(--accent-emerald);">Rank 11 (99.30%)</div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Primary Stack</span>
+                  <div class="fact-val">Python • React • Django</div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">AI Focus</span>
+                  <div class="fact-val">RAG • ML Regressors</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-subtle);">
+              <span style="font-size:0.8rem;color:var(--text-muted);display:block;margin-bottom:8px;">DIRECT
+                CHANNELS</span>
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <button class="btn btn-secondary btn-sm" data-copy-text="ajaypayer5@gmail.com"
+                  style="width:100%;justify-content:flex-start;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>ajaypayer5@gmail.com</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" data-copy-text="+918669180821"
+                  style="width:100%;justify-content:flex-start;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>+91 8669180821</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD PORTAL CARDS (EXPLORE ALL DEDICATED PAGES) -->
+    <section class="dashboard-hub-section" aria-labelledby="hub-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="hub-heading" class="section-title">Explore Dedicated Sections</h2>
+          <p class="section-desc">Access detailed deep-dives into my academic trajectory, professional engineering
+            experience, projects, skills, articles, and verified honors.</p>
+        </div>
+
+        <div class="dashboard-hub-grid">
+          <!-- Card 1: Education -->
+          <a href="education.html" class="hub-card">
+            <div>
+              <div class="hub-card-top">
+                <div class="hub-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <span class="hub-badge">VJTI • DBATU</span>
+              </div>
+              <h3 class="hub-card-title">Academic & Education</h3>
+              <p class="hub-card-desc">B.Tech at VJTI Mumbai, 99.30% State Rank 11 at DBATU, and deep-dive into relevant
+                CS coursework.</p>
+            </div>
+            <div class="hub-card-footer">
+              <span>View Education Records</span>
+              <span class="hub-card-arrow">→</span>
+            </div>
+          </a>
+
+          <!-- Card 2: Experience -->
+          <a href="experience.html" class="hub-card">
+            <div>
+              <div class="hub-card-top">
+                <div class="hub-icon-wrapper emerald">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <span class="hub-badge" style="color:var(--accent-emerald);">Konect U</span>
+              </div>
+              <h3 class="hub-card-title">Professional Experience</h3>
+              <p class="hub-card-desc">Generative AI / ML internship, sensor data pipelines, and comparative model
+                benchmarking suite.</p>
+            </div>
+            <div class="hub-card-footer">
+              <span style="color:var(--accent-emerald);">Inspect Industry Work</span>
+              <span class="hub-card-arrow">→</span>
+            </div>
+          </a>
+
+          <!-- Card 3: Projects -->
+          <a href="projects.html" class="hub-card">
+            <div>
+              <div class="hub-card-top">
+                <div class="hub-icon-wrapper purple">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <span class="hub-badge" style="color:var(--accent-purple);">7 Featured Systems</span>
+              </div>
+              <h3 class="hub-card-title">Projects Showcase</h3>
+              <p class="hub-card-desc">HTE Decision Intelligence (Govt. of Maharashtra), Krushi Sarthi, Air Dust ML, Minesweeper AI CSP Solver, HealthMate, and more.</p>
+            </div>
+            <div class="hub-card-footer">
+              <span style="color:var(--accent-purple);">Explore All Projects</span>
+              <span class="hub-card-arrow">→</span>
+            </div>
+          </a>
+
+          <!-- Card 4: Skills -->
+          <a href="skills.html" class="hub-card">
+            <div>
+              <div class="hub-card-top">
+                <div class="hub-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <span class="hub-badge">Languages • ML • DB</span>
+              </div>
+              <h3 class="hub-card-title">Skills & Tooling Matrix</h3>
+              <p class="hub-card-desc">Comprehensive inventory of programming languages, machine learning frameworks,
+                databases, and environments.</p>
+            </div>
+            <div class="hub-card-footer">
+              <span>View Skills Matrix</span>
+              <span class="hub-card-arrow">→</span>
+            </div>
+          </a>
+
+
+
+          <!-- Card 6: Achievements -->
+          <a href="achievements.html" class="hub-card">
+            <div>
+              <div class="hub-card-top">
+                <div class="hub-icon-wrapper amber">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <span class="hub-badge" style="color:var(--accent-amber);">Hackathon Winner & Certifications</span>
+              </div>
+              <h3 class="hub-card-title">Achievements & Honors</h3>
+              <p class="hub-card-desc">VJTI AI Hackathon Winner 2026, State Rank 11 (99.30%), Data Science at IIT Kharagpur, NVIDIA DLI, and Lenovo AI Scholar.</p>
+            </div>
+            <div class="hub-card-footer">
+              <span style="color:var(--accent-amber);">View Honors</span>
+              <span class="hub-card-arrow">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div>
+        <span style="font-weight:700;color:var(--text-primary);">Ajay Payer</span> • VJTI Mumbai
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: RESUME VIEWER -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="resume-modal" class="modal-dialog modal-lg" style="display:none;max-width:920px;width:95%;">
+      <div class="modal-header">
+        <h3 class="modal-title">Ajay Payer — Curriculum Vitae</h3>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <a href="assets/images/AJAY_RESUME_final.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Open in New Tab
+          </a>
+          <button class="modal-close-btn" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding:0;height:650px;">
+        <iframe src="assets/images/AJAY_RESUME_final.pdf"
+          style="width:100%;height:100%;border:none;border-radius:0 0 8px 8px;" title="Ajay Payer Resume PDF"></iframe>
+      </div>
+      <div class="modal-footer">
+        <a href="assets/images/AJAY_RESUME_final.pdf" download="AJAY_RESUME_final.pdf" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume (PDF)
+        </a>
+        <button class="btn btn-secondary modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE OVERLAY -->
+  <div id="command-palette-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog command-palette-dialog">
+      <div class="palette-search-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="palette-input" placeholder="Type a page or command (e.g. education, projects, resume)..."
+          aria-label="Command search">
+        <span class="shortcut-badge">ESC</span>
+      </div>
+      <div id="palette-results" class="palette-results"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=2.5"></script>
+</body>
+
+</html>

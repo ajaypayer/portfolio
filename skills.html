@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ajay Payer - Technical Skills & Tooling Matrix. Languages, ML Frameworks, Databases, and Developer Environments.">
+  <title>Skills Matrix & Tools | Ajay Payer | AI & ML Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.1">
+</head>
+<body>
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Ajay Payer Home">
+        <div class="brand-avatar">
+          <img src="assets/images/ajay-payer.jpg" alt="Ajay Payer" loading="eager">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Ajay Payer</span>
+          <span class="brand-status"><span class="status-pulse"></span>Competency Matrix</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" role="navigation">
+        <a href="index.html" class="nav-link">Dashboard</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link active">Skills</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="cmd-palette-btn" class="icon-btn" aria-label="Search (Ctrl+K)" data-tooltip="Quick Search (Ctrl+K)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme (T)" data-tooltip="Switch Theme (T)">
+          <span id="theme-icon"></span>
+        </button>
+        <button id="mobile-toggle-btn" class="icon-btn mobile-toggle" aria-label="Open mobile navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand"><span class="brand-name">Ajay Payer</span></div>
+      <button id="mobile-drawer-close" class="icon-btn">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">🏠 Dashboard</a></li>
+      <li><a href="education.html" class="mobile-nav-link">🎓 Education</a></li>
+      <li><a href="experience.html" class="mobile-nav-link">💼 Experience</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">🚀 Projects</a></li>
+      <li><a href="skills.html" class="mobile-nav-link">⚡ Skills</a></li>
+      <li><a href="achievements.html" class="mobile-nav-link">🏆 Achievements</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">📬 Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Dashboard</a>
+          <span>/</span>
+          <span>Technical Skills</span>
+        </div>
+        <h1 class="page-banner-title">Technical Skills & Tooling Matrix</h1>
+        <p class="page-banner-desc">
+          Structured inventory of core languages, machine learning frameworks, data architectures, and developer tooling mastered throughout academic and production projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="container" style="padding-bottom: clamp(3rem, 6vw, 5rem);">
+      <div class="skills-container">
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h2 class="cat-title">Programming Languages</h2>
+          </div>
+          <div class="skills-badge-list">
+            <span class="skill-pill" data-tooltip="Primary ML & backend language"><span class="skill-level-dot"></span>Python</span>
+            <span class="skill-pill" data-tooltip="Systems & hardware fundamentals"><span class="skill-level-dot"></span>C</span>
+            <span class="skill-pill" data-tooltip="Object-oriented systems & DSA"><span class="skill-level-dot"></span>C++</span>
+            <span class="skill-pill" data-tooltip="Enterprise OOP architecture"><span class="skill-level-dot"></span>Java</span>
+            <span class="skill-pill" data-tooltip="Interactive UI & Async API handling"><span class="skill-level-dot"></span>JavaScript</span>
+            <span class="skill-pill" data-tooltip="Semantic web accessibility"><span class="skill-level-dot"></span>HTML5</span>
+            <span class="skill-pill" data-tooltip="Modern CSS3 & Design systems"><span class="skill-level-dot"></span>CSS3</span>
+          </div>
+        </div>
+
+        <!-- ML & Libraries -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <h2 class="cat-title">Frameworks & Libraries</h2>
+          </div>
+          <div class="skills-badge-list">
+            <span class="skill-pill" data-tooltip="Production web frameworks & REST APIs"><span class="skill-level-dot"></span>Django</span>
+            <span class="skill-pill" data-tooltip="Regression, classification, preprocessing"><span class="skill-level-dot"></span>Scikit-learn</span>
+            <span class="skill-pill" data-tooltip="Tabular data wrangling & aggregations"><span class="skill-level-dot"></span>Pandas</span>
+            <span class="skill-pill" data-tooltip="Vectorized numerical operations"><span class="skill-level-dot"></span>NumPy</span>
+            <span class="skill-pill" data-tooltip="Data visualization & EDA charts"><span class="skill-level-dot"></span>Matplotlib</span>
+            <span class="skill-pill" data-tooltip="Vector embeddings for RAG"><span class="skill-level-dot"></span>ChromaDB</span>
+            <span class="skill-pill" data-tooltip="Java enterprise services"><span class="skill-level-dot"></span>Spring Boot (Basic)</span>
+          </div>
+        </div>
+
+        <!-- Databases & Storage -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h2 class="cat-title">Databases & Storage</h2>
+          </div>
+          <div class="skills-badge-list">
+            <span class="skill-pill" data-tooltip="Relational schema & indexing"><span class="skill-level-dot"></span>MySQL</span>
+            <span class="skill-pill" data-tooltip="Embedded transactional engine"><span class="skill-level-dot"></span>SQLite</span>
+            <span class="skill-pill" data-tooltip="High-speed vector similarity"><span class="skill-level-dot"></span>Vector Databases</span>
+            <span class="skill-pill" data-tooltip="ACID compliance & relational integrity"><span class="skill-level-dot"></span>Relational Modeling</span>
+          </div>
+        </div>
+
+        <!-- Developer Tools & Environments -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h2 class="cat-title">Tools & Environments</h2>
+          </div>
+          <div class="skills-badge-list">
+            <span class="skill-pill" data-tooltip="Version control & collaborative repos"><span class="skill-level-dot"></span>Git & GitHub</span>
+            <span class="skill-pill" data-tooltip="Primary code editor"><span class="skill-level-dot"></span>VS Code</span>
+            <span class="skill-pill" data-tooltip="API endpoint validation & testing"><span class="skill-level-dot"></span>Postman</span>
+            <span class="skill-pill" data-tooltip="Cloud GPU model training"><span class="skill-level-dot"></span>Google Colab</span>
+            <span class="skill-pill" data-tooltip="Interactive EDA & data pipelines"><span class="skill-level-dot"></span>Jupyter Notebook</span>
+            <span class="skill-pill" data-tooltip="Mobile application development"><span class="skill-level-dot"></span>Android Studio</span>
+            <span class="skill-pill" data-tooltip="Java development environment"><span class="skill-level-dot"></span>IntelliJ IDEA</span>
+            <span class="skill-pill" data-tooltip="Legacy Java tooling"><span class="skill-level-dot"></span>Eclipse</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;padding:24px;background:var(--bg-card);border:1px solid var(--border-accent);border-radius:var(--radius-xl);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+        <div>
+          <h3 style="font-size:1.15rem;margin-bottom:4px;">Want to see these skills in action?</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);">Explore the interactive project architectures and real-world system implementations.</p>
+        </div>
+        <div style="display:flex;gap:12px;">
+          <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div>
+        <span style="font-weight:700;color:var(--text-primary);">Ajay Payer</span> • VJTI Mumbai
+      </div>
+    </div>
+  </footer>
+
+  <!-- COMMAND PALETTE OVERLAY -->
+  <div id="command-palette-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog command-palette-dialog">
+      <div class="palette-search-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="palette-input" placeholder="Type a page or command (e.g. education, projects, resume)..."
+          aria-label="Command search" autocomplete="off">
+        <span class="shortcut-badge">ESC</span>
+      </div>
+      <div id="palette-results" class="palette-results"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=2.5"></script>
+</body>
+</html>

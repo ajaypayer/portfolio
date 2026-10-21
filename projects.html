@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ajay Payer - Engineering & AI Projects Showcase. HTE Decision Intelligence Platform, Krushi Sarthi, Air Dust ML.">
+  <title>Projects Showcase | Ajay Payer | AI & Full-Stack Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.2">
+</head>
+<body>
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Ajay Payer Home">
+        <div class="brand-avatar">
+          <img src="assets/images/ajay-payer.jpg" alt="Ajay Payer" loading="eager">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Ajay Payer</span>
+          <span class="brand-status"><span class="status-pulse"></span>Projects Portfolio</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" role="navigation">
+        <a href="index.html" class="nav-link">Dashboard</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="cmd-palette-btn" class="icon-btn" aria-label="Search (Ctrl+K)" data-tooltip="Quick Search (Ctrl+K)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme (T)" data-tooltip="Switch Theme (T)">
+          <span id="theme-icon"></span>
+        </button>
+        <button id="mobile-toggle-btn" class="icon-btn mobile-toggle" aria-label="Open mobile navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand"><span class="brand-name">Ajay Payer</span></div>
+      <button id="mobile-drawer-close" class="icon-btn">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">🏠 Dashboard</a></li>
+      <li><a href="education.html" class="mobile-nav-link">🎓 Education</a></li>
+      <li><a href="experience.html" class="mobile-nav-link">💼 Experience</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">🚀 Projects</a></li>
+      <li><a href="skills.html" class="mobile-nav-link">⚡ Skills</a></li>
+      <li><a href="achievements.html" class="mobile-nav-link">🏆 Achievements</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">📬 Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Dashboard</a>
+          <span>/</span>
+          <span>Featured Projects</span>
+        </div>
+        <h1 class="page-banner-title">Engineering & AI Systems Portfolio</h1>
+        <p class="page-banner-desc">
+          Production-grade systems combining Document RAG architectures, machine learning predictive models, and citizen-accessible full-stack software.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="container" style="padding-bottom: clamp(3rem, 6vw, 5rem);">
+      <!-- Filter Bar & Search -->
+      <div class="projects-filter-bar">
+        <div class="filter-btn-group" role="tablist" aria-label="Project Categories">
+          <button class="filter-tab active" data-filter="all" role="tab">
+            <span>All Projects</span>
+            <span class="filter-count-badge">7</span>
+          </button>
+          <button class="filter-tab" data-filter="decision-platforms" role="tab">
+            <span>Decision Intelligence</span>
+            <span class="filter-count-badge">1</span>
+          </button>
+          <button class="filter-tab" data-filter="ml-ai" role="tab">
+            <span>Machine Learning & AI</span>
+            <span class="filter-count-badge">5</span>
+          </button>
+          <button class="filter-tab" data-filter="fullstack" role="tab">
+            <span>Full-Stack & Systems</span>
+            <span class="filter-count-badge">6</span>
+          </button>
+        </div>
+
+        <div class="projects-search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="project-search-input" placeholder="Search by name, technology (e.g. CSP, Django, React)..." aria-label="Search projects">
+        </div>
+      </div>
+
+      <div id="projects-count-display" style="font-size:0.85rem;color:var(--text-muted);margin-bottom:20px;">
+        Showing 7 of 7 projects
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid-container">
+
+        <!-- Project 1: HTE Decision Intelligence Platform -->
+        <article class="project-card" data-category="decision-platforms decision-intelligence fullstack ml-ai">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag" style="color:var(--accent-amber);border-color:rgba(234,179,8,0.3);">🏆 VJTI AI Hackathon Winner 2026 • Govt Adoption</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">HTE-Based AI Decision Platform</h2>
+            <p class="project-desc">
+              1st place winner at the <strong>VJTI AI Hackathon 2026</strong> and adopted by the <strong>Government of Maharashtra</strong>. Unifies 11 educational datasets across 20+ engineering colleges for institutional analytics, college comparisons, and executive policy planning.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Built an AI decision assistant answering natural-language queries using hybrid search (ChromaDB + BM25) and Groq LLaMA-3 inference.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Branch-wise enrollment forecasting pipeline predicting admission trajectories with confidence intervals and feature explanations.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Django</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">ChromaDB</span>
+              <span class="tech-badge">BM25 Search</span>
+              <span class="tech-badge">Groq LLaMA-3</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-amber);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Hackathon Winner & Govt. Adoption (2026)
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="hte-platform">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2: Krushi Sarthi -->
+        <article class="project-card" data-category="ml-ai fullstack">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag">Agritech AI • Public Service</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer/KrushiSarthi" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">Krushi Sarthi</h2>
+            <p class="project-desc">
+              A centralized agricultural portal covering Government Schemes, Minimum Support Price (MSP), and Agricultural Loans with multilingual conversational assistance for Indian farmers.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Integrated AI chatbot supporting 3 regional languages: <strong>Marathi, Hindi, and English</strong> for digital inclusivity.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated SMS alert dispatch notifying enrolled farmers instantly upon published MSP updates or scheme changes.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Django</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">Google Gemini API</span>
+              <span class="tech-badge">SMS Worker</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-emerald);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Multilingual AI (Feb – May 2026)
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="krushi-sarthi">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3: Air Dust Particle Size Measurement -->
+        <article class="project-card" data-category="ml-ai">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag">Machine Learning • Environmental IoT</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer/Air-Dust-Size-Measurment" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">Air Dust Particle Size & PM2.5 Prediction</h2>
+            <p class="project-desc">
+              Machine learning solution predicting PM2.5 concentrations by fusing reference station observations with low-cost ambient sensor telemetry.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Timestamp synchronization, hourly rolling averaging, IQR outlier rejection, and feature scaling.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Benchmarked 4 regressors: Random Forest achieved <strong>R² of 89.2%</strong>, RMSE 43.94, MAE 28.86.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Matplotlib</span>
+              <span class="tech-badge">XGBoost</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-cyan);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              R² = 89.2% (Jun – Jul 2024)
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="air-dust">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: Minesweeper AI Game - CSP -->
+        <article class="project-card" data-category="ml-ai fullstack">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag">AI Algorithms • Constraint Satisfaction</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer/MineswwperGame-CSP" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">Minesweeper AI — CSP Solver & Probability Engine</h2>
+            <p class="project-desc">
+              An intelligent autonomous solver and interactive web game using advanced Constraint Satisfaction Problem (CSP) formulation and probabilistic inference algorithms.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Transforms grid cells into linear constraint equations, applying subset deduction and deterministic frontier solving.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Probabilistic calculation engine evaluating exact mine risk percentages for unresolvable boundary states.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">CSP Algorithm</span>
+              <span class="tech-badge">Probability AI</span>
+              <span class="tech-badge">HTML5 Canvas</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-purple);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              CSP Solver (Apr 2026)
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="minesweeper-csp">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5: HealthMate AI Assistant -->
+        <article class="project-card" data-category="ml-ai fullstack">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag">HealthTech AI • Conversational Agent</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer/Healthmate" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">HealthMate — AI Healthcare Assistant</h2>
+            <p class="project-desc">
+              An accessible conversational healthcare assistant designed for preliminary symptom screening, health triage, and personalized wellness suggestions.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Conversational intake flow evaluating symptoms with adaptive context gathering and clinical triage routing.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Modern, accessibility-first web UI with emergency SOS access and preventative healthcare guidance.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">AI Assistant</span>
+              <span class="tech-badge">Health Informatics</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-emerald);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              HealthTech AI (Jun 2026)
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="healthmate">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: FJMS (Freelancer Job Management System) -->
+        <article class="project-card" data-category="fullstack">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag">Full-Stack Web • Enterprise Workflow</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer/FJMS" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">FJMS — Freelancer Job Management System</h2>
+            <p class="project-desc">
+              A comprehensive platform streamlining client-freelancer agreements, milestone deliverables, contract statuses, and invoice tracking.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>End-to-end proposal submission, bidding lifecycle, client review cycles, and project contract agreements.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Real-time milestone progress tracking, status state machines, and invoice generation.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Backend APIs</span>
+              <span class="tech-badge">Database Design</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-cyan);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Full-Stack Platform
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="fjms">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 7: SE LAB Event Registration -->
+        <article class="project-card" data-category="fullstack">
+          <div>
+            <div class="project-top">
+              <span class="project-category-tag">Software Engineering • Event Registration</span>
+              <div class="project-actions">
+                <a href="https://github.com/ajaypayer/SE_LAB_RegisterEvent" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository" data-tooltip="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h2 class="project-title">Event Registration & Management Portal</h2>
+            <p class="project-desc">
+              A collegiate event registration portal managing participant onboarding, quota verification, seat allotment, and pass issuance.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Structured registration workflows with input sanitization, duplicate prevention, and seat allotment.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated generation of unique attendee passes and administrative exportable rosters.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Web Architecture</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-impact-badge" style="color:var(--accent-purple);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              SE Lab Project
+            </span>
+
+            <button class="btn btn-secondary btn-sm" data-inspect-project="event-register">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Empty State -->
+      <div id="projects-empty-state" style="display:none;text-align:center;padding:48px 20px;background:var(--bg-card);border:1px dashed var(--border-strong);border-radius:var(--radius-lg);margin-top:20px;">
+        <p style="font-size:1.1rem;color:var(--text-primary);margin-bottom:8px;">No projects matched your search query</p>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:18px;">Try searching for "Django", "Machine Learning", or "Groq"</p>
+        <button id="reset-filter-btn" class="btn btn-outline btn-sm">Clear Search & Reset Filters</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div>
+        <span style="font-weight:700;color:var(--text-primary);">Ajay Payer</span> • VJTI Mumbai
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT INSPECTION MODAL -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="project-detail-modal" class="modal-dialog modal-lg" style="display:none;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="modal-proj-title">Project Deep-Dive</h3>
+          <span id="modal-proj-category" style="font-size:0.8rem;color:var(--accent-cyan);font-weight:600;"></span>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom:16px;">
+          <h4 style="font-size:1rem;color:var(--text-primary);margin-bottom:6px;">Tech Stack & Deployment</h4>
+          <p id="modal-proj-stack" style="font-family:var(--font-mono);font-size:0.86rem;color:var(--accent-cyan);"></p>
+          <span id="modal-proj-period" style="font-size:0.8rem;color:var(--text-muted);"></span>
+        </div>
+
+        <div style="margin-bottom:20px;">
+          <h4 style="font-size:1rem;color:var(--text-primary);margin-bottom:8px;">Core Engineering Highlights</h4>
+          <ul id="modal-proj-highlights" style="list-style:none;display:flex;flex-direction:column;gap:8px;"></ul>
+        </div>
+
+        <div>
+          <h4 style="font-size:1rem;color:var(--text-primary);margin-bottom:8px;">System Architecture & Data Flow</h4>
+          <pre id="modal-proj-arch" style="background:var(--bg-tertiary);padding:16px;border-radius:var(--radius-md);border:1px solid var(--border-subtle);font-family:var(--font-mono);font-size:0.78rem;color:var(--text-primary);overflow-x:auto;"></pre>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary modal-close-btn">Done Exploring</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE OVERLAY -->
+  <div id="command-palette-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog command-palette-dialog">
+      <div class="palette-search-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="palette-input" placeholder="Type a page or command (e.g. education, projects, resume)..."
+          aria-label="Command search" autocomplete="off">
+        <span class="shortcut-badge">ESC</span>
+      </div>
+      <div id="palette-results" class="palette-results"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=2.5"></script>
+</body>
+</html>
